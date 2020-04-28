@@ -1,6 +1,6 @@
 /**
- * Takes a screen shot at the given URL with
- * specified dimensions, e.g. 1920x1080
+ * Takes a screen shot at the given fully qualified URL with
+ * optional specified dimensions, e.g. 1920x1080
  * (the 'x' should be lowercase).
  * If no dimensions are specified, uses a default
  * size mentioned in usage().
@@ -92,6 +92,7 @@ switch (args.length) {
     break;
 }
 
+// Add https if it was forgotten.
 if (!(url.startsWith("https://") || url.startsWith("http://"))) {
   url = "https://" + url
 }
