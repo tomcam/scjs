@@ -1,0 +1,3 @@
+# scjs
+
+Takes screenshots programmatically
